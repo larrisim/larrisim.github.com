@@ -1,82 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="./docs-assets/ico/favicon.png">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="./docs-assets/ico/favicon.png">
 
-    <title>Narrow Jumbotron Template for Bootstrap</title>
+        <title>Narrow Jumbotron Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron-narrow.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-  <body>
+    <body>
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Project name</h3>
-      </div>
+        <div class="container"> 
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a data-toggle="tab" href="#about">About</a></li>
+                    <li><a id="nav_portfolio" data-toggle="tab" href="#portfolio">Portfolio</a></li>
+                    <li><a data-toggle="tab" href="#contact">Contact</a></li>
+                </ul>
+                <h3 class="text-muted">Larry Chang</h3>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="about">
+                    <div class="jumbotron">
+                        <h3>About Larry Chang</h3>
+                        </br>
+                        <p>
+                        Born and raised in Taipei, Larry Chang held a deep fascination for arts of all forms. From a young age, he has been classically trained in piano, dizi (Chinese flute) and music theory and is at home with classical, jazz, pop, rock, theater, as well as film music. In order to combine art with business, Larry chose to study in National Taiwan University (NTU) and received his B.B.A. degree in 2011. In college, Larry actively collaborated with various student film and theater projects and gained his practical experiences as a composer, arranger and performer.
+                        Larry began focusing on scoring for film and theater after graduation. He learned to manage work well in a team in every project and has composed for an array of films and theaters.
+                        Larry also learned 2D and 3D animation in his free time. He managed to produce his own animated films and projects.
+                        </br></br>
+                        </p>
+                        <p><a class="btn btn-lg btn-success" onclick='$("#nav_portfolio").click();' role="button">Know Me More</a></p>
+                    </div>
+                </div> <!-- tab-pane -->
+                <div class="tab-pane fade in" id="portfolio">
+                    <h3>Zone Pro Site</h3>
+                    <p> Zone Pro Site is a movie talking about the traditional Taiwanese cook and cuisine, and their way of living that affects the young generation. Zone Pro Site won a 300 million box office in Taiwan & its music was nominated to be the Best Original Film Score in Taipei Golden Horse Award (Taiwan’s equivalent to the Grammy Awards)
+                    Larry was responsible as additional music composer and performer of traditional Chinese music instrument, Dizi and Bawu in this film. 
+                    </p>
+                    <ul class="nav nav-tabs" id="work1_nav">
+                        <li class="active"><a href="#work1_1" data-toggle="tab"><small>Video1</small></a></li>
+                        <li><a href="#work1_2" data-toggle="tab"><small>Video2</small></a></li>
+                        <li><a href="#work1_3" data-toggle="tab"><small>Video3</small></a></li>
+                        <li><a href="#work1_4" data-toggle="tab"><small>Video4</small></a></li>
+                    </ul>
+                    <div class="tab-content" align="center">
+                        <div class="tab-pane active" id="work1_1">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQfeVF4Naw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work1_2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MDAqEsw7Gyw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work1_3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WXw7Q4YczpU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work1_4">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KNT3axImhI4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
+                    </br></br>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                    <h3>The Great Escape from Café City</h3>
+                    <p>
+                    The Great Escape from Café City is a short film. The story cynically talks about a guy who discovered all the little happiness happened in his life is nothing but faking & manipulated.
+                    Larry was responsible as one of the composer in this film. He challenged to use post rock & modern music styles to interpret The Truman Show-like chaos. He also created an awkward atmosphere to make everything looks like madness.
+                    </p>
+                    <ul class="nav nav-tabs" id="work2_nav">
+                        <li class="active"><a href="#work2_1" data-toggle="tab"><small>Video1</small></a></li>
+                        <li><a href="#work2_2" data-toggle="tab"><small>Video2</small></a></li>
+                        <li><a href="#work2_3" data-toggle="tab"><small>Video3</small></a></li>
+                    </ul>
+                    <div class="tab-content" align="center">
+                        <div class="tab-pane active" id="work2_1">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6dnaa2N3qS4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work2_2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jsYe16OKfuw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work2_3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jzk8tgEb1tA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </br></br>
+                    
+                    <h3>The Adventure of Shimajiro – Rescuing the Stolen Rainbow</h3>
+                    <p>
+                    The Adventure of Shimajiro is a children’s theater production. In the story, the main characters go through an adventure trying to rescue the rainbow stolen by bad guys.
+                    </p>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+                    </br></br>
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                    <h3>Show On APP</h3>
+                    <p>
+                    Show On APP is a theater production that designed as the monologue of an ordinary pink collar worker discussing critically about what life is all about.
+                    Larry designed various kind of listening experience correspond to the colorful thought in the mind of the leading actress.
+                    </p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </br></br>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+                    <h3>K24</h3>
+                    <p>
+                    K24 is a TV-series style theater production. In the story, a stupid agent runs into huge murders, suspicious but funny theme. Larry composed some songs for the characters.
+                    </p>
 
-      <div class="footer">
-        <p>&copy; Company 2013</p>
-      </div>
+                    </br></br>
 
-    </div> <!-- /container -->
+                    <h3>Goodbye Lady</h3>
+                    <p>
+                    Goodbye Lady is theater production talking about a love story in a family. It’s about a single mother shares house with an actor who changes her life afterward.
+                    Larry was responsible as additional music composer.
+                    </p>
+                    
+                    </br></br>
+
+                    <h3>Faithball</h3>
+                    <p>
+                    Faithball is a movie about a Taiwanese baseball team and how they determined themselves to win the game with beliefs
+                    </p>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/3FqQTsFsVlU" frameborder="0" allowfullscreen></iframe>
+
+                    </br></br>
+
+                    <h3>The Sight of One’s Back</h3>
+                    <p>
+                    The Sight of One’s Back is a student’s short film talking about the daily life of Taiwanese family in old days. Larry was responsible as the music composer. He used traditional Taiwanese music instrument to enhance the nostalgic feeling. 
+                    The film was chosen as the opening movie in the 19th Radio, TV and Film Festival of Shih Hsin University- the greatest honor in the festival.
+                    </p>
+
+                    </br></br>
+
+                    <h3>Tainan Love God V.S. Cupid</h3>
+                    <p>
+                    A comedy about the battle between western and eastern love God.
+                    </p>
+                    <ul class="nav nav-tabs" id="work9_nav">
+                        <li class="active"><a href="#work9_1" data-toggle="tab"><small>Trailer</small></a></li>
+                        <li><a href="#work9_2" data-toggle="tab"><small>Film</small></a></li>
+                    </ul>
+                    <div class="tab-content" align="center">
+                        <div class="tab-pane active" id="work9_1">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qyzBYos6u8g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane" id="work9_2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/o-y9WKZOyFE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    </br></br>
+
+                    <h3>Three Little Pigs</h3>
+                    <p>
+                    Three Little Pigs is a bank commercial designed by Larry. He not only designed the script but drew the animation and composed the music.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SinqOXE-6DU" frameborder="0" allowfullscreen></iframe>
+                    
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
+
+                </div> <!-- tab-pane -->
+                <div class="tab-pane fade in" id="contact">
+                    <p><a href="mailto:larrisim@gmail.com">Email Address: larrisim@gmail.com</a></p>
+                    <p>Linkedin: Larrisim</p>
+                </div> <!-- tab-pane -->
+                <div class="footer">
+                    <p>&copy; Larry Chang 2013</p>
+                </div>
+            </div> <!-- tab-content -->
+
+        </div> <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./docs-assets/js/holder.js"></script>
+        <script src="./docs-assets/js/application.js"></script>
+        <script src="http://platform.twitter.com/widgets.js"></script>
+    </body>
 </html>
