@@ -8,7 +8,7 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="./docs-assets/ico/favicon.png">
 
-        <title>Narrow Jumbotron Template for Bootstrap</title>
+        <title>Larry Chang</title>
 
         <!-- Bootstrap core CSS -->
         <link href="./dist/css/bootstrap.css" rel="stylesheet">
@@ -24,15 +24,32 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <style>
+            .context-inside {
+                text-align: left;
+                font-family: times;
+                font-size: 18px;
+            }
+            .img-slide {
+                width: 560;
+                height: 315;
+            }
+        </style>
     </head>
 
     <body>
 
         <div class="container"> 
             <div class="header">
-                <ul class="nav nav-pills pull-right">
+                <ul class="nav nav-pills pull-right navbar">
                     <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-                    <li><a id="nav_portfolio" data-toggle="tab" href="#portfolio">Portfolio</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="nav_portfolio" data-toggle="tab" href="#portfolio">Works</a></li>
+                        <li><a data-toggle="tab" href="#work_in_progress">Work in Progress</a></li>
+                    </ul>
+                    </li>
                     <li><a data-toggle="tab" href="#contact">Contact</a></li>
                 </ul>
                 <h3 class="text-muted">Larry Chang</h3>
@@ -40,167 +57,295 @@
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="about">
                     <div class="jumbotron">
-                        <h3>About Larry Chang</h3>
+                        <div class="header"><strong>About</strong></div>
+                        <img src="./me.jpg" alt="me"/ width="75%" height="auto"/>
                         </br>
-                        <p>
+                        </br>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Born and raised in Taipei, Larry Chang held a deep fascination for arts of all forms. From a young age, he has been classically trained in piano, dizi (Chinese flute) and music theory and is at home with classical, jazz, pop, rock, theater, as well as film music. In order to combine art with business, Larry chose to study in National Taiwan University (NTU) and received his B.B.A. degree in 2011. In college, Larry actively collaborated with various student film and theater projects and gained his practical experiences as a composer, arranger and performer.
+                        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Larry began focusing on scoring for film and theater after graduation. He learned to manage work well in a team in every project and has composed for an array of films and theaters.
+                        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Larry also learned 2D and 3D animation in his free time. He managed to produce his own animated films and projects.
                         </br></br>
                         </p>
-                        <p><a class="btn btn-lg btn-success" onclick='$("#nav_portfolio").click();' role="button">Know Me More</a></p>
+                        <span><a class="btn btn-lg btn-primary" role="button">Curriculum Vitae</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><a class="btn btn-lg btn-primary" onclick='$("#nav_portfolio").click();' role="button">Portfolio</a></span>
                     </div>
                 </div> <!-- tab-pane -->
                 <div class="tab-pane fade in" id="portfolio">
-                    <h3>Zone Pro Site</h3>
-                    <p> Zone Pro Site is a movie talking about the traditional Taiwanese cook and cuisine, and their way of living that affects the young generation. Zone Pro Site won a 300 million box office in Taiwan & its music was nominated to be the Best Original Film Score in Taipei Golden Horse Award (Taiwan’s equivalent to the Grammy Awards)
-                    Larry was responsible as additional music composer and performer of traditional Chinese music instrument, Dizi and Bawu in this film. 
-                    </p>
-                    <ul class="nav nav-tabs" id="work1_nav">
-                        <li class="active"><a href="#work1_1" data-toggle="tab"><small>Video1</small></a></li>
-                        <li><a href="#work1_2" data-toggle="tab"><small>Video2</small></a></li>
-                        <li><a href="#work1_3" data-toggle="tab"><small>Video3</small></a></li>
-                        <li><a href="#work1_4" data-toggle="tab"><small>Video4</small></a></li>
-                        <li><a href="#work1_5" data-toggle="tab"><small>Video5</small></a></li>
-                    </ul>
-                    <div class="tab-content" align="center">
-                        <div class="tab-pane active" id="work1_1">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQfeVF4Naw" frameborder="0" allowfullscreen></iframe>
+                    <div class="jumbotron">
+                        <div class="header"><strong>Zone Pro Site</strong></div>
+                        <ul class="nav nav-tabs" id="work1_nav">
+                            <li class="active"><a href="#work1_1" data-toggle="tab"><small>Soundtrack</small></a></li>
+                            <li><a href="#work1_2" data-toggle="tab"><small>Video 1</small></a></li>
+                            <li><a href="#work1_3" data-toggle="tab"><small>Video 2</small></a></li>
+                            <li><a href="#work1_4" data-toggle="tab"><small>Video 3</small></a></li>
+                            <li><a href="#work1_5" data-toggle="tab"><small>Video 4</small></a></li>
+                        </ul>
+                        <div class="tab-content" align="center">
+                            <div class="tab-pane active" id="work1_1">
+                                <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990810%3Fsecret_token%3Ds-xZo2y"></iframe>
+                            </div>
+                            <div class="tab-pane" id="work1_2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQfeVF4Naw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work1_3">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MDAqEsw7Gyw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work1_4">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WXw7Q4YczpU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work1_5">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KNT3axImhI4" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="tab-pane" id="work1_2">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MDAqEsw7Gyw" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="tab-pane" id="work1_3">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WXw7Q4YczpU" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="tab-pane" id="work1_4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KNT3axImhI4" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="tab-pane" id="work1_5">
-                            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14991039%3Fsecret_token%3Ds-ucNZZ"></iframe>
-                        </div>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Zone Pro Site is a movie talking about the traditional Taiwanese cook and cuisine, and their way of living that affects the young generation. Zone Pro Site won a 300 million box office in Taiwan & its music was nominated to be the Best Original Film Score in Taipei Golden Horse Award (Taiwan’s equivalent to the Grammy Awards)
+                        Larry was responsible as additional music composer and performer of traditional Chinese music instrument, Dizi and Bawu in this film. 
+                        </p>
                     </div>
 
-                    </br></br>
-
-                    <h3>The Great Escape from Café City</h3>
-                    <p>
-                    The Great Escape from Café City is a short film. The story cynically talks about a guy who discovered all the little happiness happened in his life is nothing but faking & manipulated.
-                    Larry was responsible as one of the composer in this film. He challenged to use post rock & modern music styles to interpret The Truman Show-like chaos. He also created an awkward atmosphere to make everything looks like madness.
-                    </p>
-                    <ul class="nav nav-tabs" id="work2_nav">
-                        <li class="active"><a href="#work2_1" data-toggle="tab"><small>Video1</small></a></li>
-                        <li><a href="#work2_2" data-toggle="tab"><small>Video2</small></a></li>
-                        <li><a href="#work2_3" data-toggle="tab"><small>Video3</small></a></li>
-                    </ul>
-                    <div class="tab-content" align="center">
-                        <div class="tab-pane active" id="work2_1">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6dnaa2N3qS4" frameborder="0" allowfullscreen></iframe>
+                    <div class="jumbotron">
+                        <div class="header"><strong>The Great Escape from Café City</strong></div>
+                        <ul class="nav nav-tabs" id="work2_nav">
+                            <li class="active"><a href="#work2_1" data-toggle="tab"><small>Soundtrack</small></a></li>
+                            <li><a href="#work2_2" data-toggle="tab"><small>Video 1</small></a></li>
+                            <li><a href="#work2_3" data-toggle="tab"><small>Video 2</small></a></li>
+                            <li><a href="#work2_4" data-toggle="tab"><small>Video 3</small></a></li>
+                        </ul>
+                        <div class="tab-content" align="center">
+                            <div class="tab-pane active" id="work2_1">
+                                <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990867%3Fsecret_token%3Ds-qtXez"></iframe>
+                            </div>
+                            <div class="tab-pane" id="work2_2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6dnaa2N3qS4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work2_3">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jsYe16OKfuw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work2_4">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jzk8tgEb1tA" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="tab-pane" id="work2_2">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jsYe16OKfuw" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="tab-pane" id="work2_3">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jzk8tgEb1tA" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The Great Escape from Café City is a short film. The story cynically talks about a guy who discovered all the little happiness happened in his life is nothing but faking & manipulated.
+                        Larry was responsible as one of the composer in this film. He challenged to use post rock & modern music styles to interpret The Truman Show-like chaos. He also created an awkward atmosphere to make everything looks like madness.
+                        </p>
                     </div>
 
-                    </br></br>
-                    
-                    <h3>The Adventure of Shimajiro – Rescuing the Stolen Rainbow</h3>
-                    <p>
-                    The Adventure of Shimajiro is a children’s theater production. In the story, the main characters go through an adventure trying to rescue the rainbow stolen by bad guys.
-                    </p>
 
-                    </br></br>
-
-                    <h3>Show On APP</h3>
-                    <p>
-                    Show On APP is a theater production that designed as the monologue of an ordinary pink collar worker discussing critically about what life is all about.
-                    Larry designed various kind of listening experience correspond to the colorful thought in the mind of the leading actress.
-                    </p>
-
-                    </br></br>
-
-                    <h3>K24</h3>
-                    <p>
-                    K24 is a TV-series style theater production. In the story, a stupid agent runs into huge murders, suspicious but funny theme. Larry composed some songs for the characters.
-                    </p>
-
-                    </br></br>
-
-                    <h3>Goodbye Lady</h3>
-                    <p>
-                    Goodbye Lady is theater production talking about a love story in a family. It’s about a single mother shares house with an actor who changes her life afterward.
-                    Larry was responsible as additional music composer.
-                    </p>
-                    
-                    </br></br>
-
-                    <h3>Faithball</h3>
-                    <p>
-                    Faithball is a movie about a Taiwanese baseball team and how they determined themselves to win the game with beliefs
-                    </p>
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/3FqQTsFsVlU" frameborder="0" allowfullscreen></iframe>
-
-                    </br></br>
-
-                    <h3>The Sight of One’s Back</h3>
-                    <p>
-                    The Sight of One’s Back is a student’s short film talking about the daily life of Taiwanese family in old days. Larry was responsible as the music composer. He used traditional Taiwanese music instrument to enhance the nostalgic feeling. 
-                    The film was chosen as the opening movie in the 19th Radio, TV and Film Festival of Shih Hsin University- the greatest honor in the festival.
-                    </p>
-
-                    </br></br>
-
-                    <h3>Tainan Love God V.S. Cupid</h3>
-                    <p>
-                    A comedy about the battle between western and eastern love God.
-                    </p>
-                    <ul class="nav nav-tabs" id="work9_nav">
-                        <li class="active"><a href="#work9_1" data-toggle="tab"><small>Trailer</small></a></li>
-                        <li><a href="#work9_2" data-toggle="tab"><small>Film</small></a></li>
-                    </ul>
-                    <div class="tab-content" align="center">
-                        <div class="tab-pane active" id="work9_1">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qyzBYos6u8g" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="tab-pane" id="work9_2">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/o-y9WKZOyFE" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                    <div class="jumbotron">
+                        <div class="header"><strong><font size="4">The Adventure of Shimajiro – Rescuing the Stolen Rainbow</font></strong></div>
+                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990907%3Fsecret_token%3Ds-1lcuO"></iframe>
+                        <p class="context-inside">
+                        The Adventure of Shimajiro is a children’s theater production. In the story, the main characters go through an adventure trying to rescue the rainbow stolen by bad guys.
+                        </p>
                     </div>
 
-                    </br></br>
 
-                    <h3>Three Little Pigs</h3>
-                    <p>
-                    Three Little Pigs is a bank commercial designed by Larry. He not only designed the script but drew the animation and composed the music.
-                    </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SinqOXE-6DU" frameborder="0" allowfullscreen></iframe>
-                    
+                    <div class="jumbotron">
+                        <div class="header"><strong>Show On APP</strong></div>
+                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990929%3Fsecret_token%3Ds-XOLKw"></iframe>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Show On APP is a theater production that designed as the monologue of an ordinary pink collar worker discussing critically about what life is all about.
+                        Larry designed various kind of listening experience correspond to the colorful thought in the mind of the leading actress.
+                        </p>
+                    </div>
 
 
+                    <div class="jumbotron">
+                        <div class="header"><strong>K24</strong></div>
+                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14991039%3Fsecret_token%3Ds-ucNZZ"></iframe>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        K24 is a TV-series style theater production. In the story, a stupid agent runs into huge murders, suspicious but funny theme. Larry composed some songs for the characters.
+                        </p>
+                    </div>
 
+                    <div class="jumbotron">
+                        <div class="header"><strong>Goodbye Lady</strong></div>
+                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14991027%3Fsecret_token%3Ds-eD9xX"></iframe>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Goodbye Lady is theater production talking about a love story in a family. It’s about a single mother shares house with an actor who changes her life afterward.
+                        Larry was responsible as additional music composer.
+                        </p>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Faithball</strong></div>
+                        <ul class="nav nav-tabs" id="work7_nav">
+                            <li class="active"><a href="#work7_1" data-toggle="tab"><small>Soundtrack</small></a></li>
+                            <li><a href="#work7_2" data-toggle="tab"><small>Video</small></a></li>
+                        </ul>
+                        <div class="tab-content" align="center">
+                            <div class="tab-pane active" id="work7_1">
+                                <iframe width="560" height="166" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/121043510%3Fsecret_token%3Ds-xvulf"></iframe>
+                            </div>
+                            <div class="tab-pane" id="work7_2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3FqQTsFsVlU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Faithball is a movie about a Taiwanese baseball team and how they determined themselves to win the game with beliefs.
+                        </p>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>The Sight of One’s Back</strong></div>
+                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990996%3Fsecret_token%3Ds-JLmIt"></iframe>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        The Sight of One’s Back is a student’s short film talking about the daily life of Taiwanese family in old days. Larry was responsible as the music composer. He used traditional Taiwanese music instrument to enhance the nostalgic feeling. 
+                        The film was chosen as the opening movie in the 19th Radio, TV and Film Festival of Shih Hsin University- the greatest honor in the festival.
+                        </p>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Tainan Love God V.S. Cupid</strong></div>
+                        <ul class="nav nav-tabs" id="work9_nav">
+                            <li class="active"><a href="#work9_1" data-toggle="tab"><small>Trailer</small></a></li>
+                            <li><a href="#work9_2" data-toggle="tab"><small>Film</small></a></li>
+                        </ul>
+                        <div class="tab-content" align="center">
+                            <div class="tab-pane active" id="work9_1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qyzBYos6u8g" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane" id="work9_2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/o-y9WKZOyFE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        A comedy about the battle between western and eastern love God.
+                        </p>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Three Little Pigs</strong></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SinqOXE-6DU" frameborder="0" allowfullscreen></iframe>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Three Little Pigs is a bank commercial designed by Larry. He not only designed the script but drew the animation and composed the music.
+                        </p>
+                    </div>
+
+                </div> <!-- tab-pane -->
+                <div class="tab-pane fade in" id="work_in_progress">
+                    <div class="jumbotron">
+                        <div class="header"><strong>In the Forest</strong></div>
+                        <img align="center" alt="forest" src="./forest.png" width="560" height="315"/>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        An animated production talks about the story between a little bear & a beautiful flower. The story discusses the meaning of loves and given. In this project, Larry tries to develop the script at the same time draws the animation and compose the music. 
+                        </p>
+                    </div>
+                    <div class="jumbotron">
+                        <div class="header"><strong>My Favorite Toy</strong></div>
+                        <img align="center" alt="toy" src="./favoritetoy.png" width="560" height="315"/>
+                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        An animated picture book talks about a boy brings his favorite toy, a doll, to go to school. The story discusses the gender issue in the perspective of an innocent boy. 
+                        </p>
+                        <p class="context-inside" style="text-align:center">
+                        <strong>Original Picture Book</strong>
+                        </p> 
+                        <!-- doll_slides Carousel -->
+                        <div id="doll_slides" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#doll_slides" data-slide-to="1" class="active"></li>
+                                <li data-target="#doll_slides" data-slide-to="2"></li>
+                                <li data-target="#doll_slides" data-slide-to="3"></li>
+                                <li data-target="#doll_slides" data-slide-to="4"></li>
+                                <li data-target="#doll_slides" data-slide-to="5"></li>
+                                <li data-target="#doll_slides" data-slide-to="6"></li>
+                                <li data-target="#doll_slides" data-slide-to="7"></li>
+                                <li data-target="#doll_slides" data-slide-to="8"></li>
+                                <li data-target="#doll_slides" data-slide-to="9"></li>
+                                <li data-target="#doll_slides" data-slide-to="10"></li>
+                                <li data-target="#doll_slides" data-slide-to="11"></li>
+                                <li data-target="#doll_slides" data-slide-to="12"></li>
+                                <li data-target="#doll_slides" data-slide-to="13"></li>
+                                <li data-target="#doll_slides" data-slide-to="14"></li>
+                                <li data-target="#doll_slides" data-slide-to="15"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/1.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/2.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/3.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/4.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/5.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/6.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/7.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/8.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/9.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/10.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/11.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/12.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/13.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/14.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/15.png"></p>
+                                </div>
+                                <div class="item" style="text-align:center">
+                                    <p><img class="img-slide" alt="doll" src="./doll/16.png"></p>
+                                </div>
+                            </div>
+                            <!-- Carousel nav -->
+                            <a class="left carousel-control" href="#doll_slides" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#doll_slides" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>                                    
+                        </div> <!-- light sys Carousel -->
+
+                    </div>
                 </div> <!-- tab-pane -->
                 <div class="tab-pane fade in" id="contact">
-                    <p><a href="mailto:larrisim@gmail.com">Email Address: larrisim@gmail.com</a></p>
-                    <p>Linkedin: Larrisim</p>
-                </div> <!-- tab-pane -->
-                <div class="footer">
-                    <p>&copy; Larry Chang 2013</p>
-                </div>
-            </div> <!-- tab-content -->
+                    <div class="jumbotron">
+                        <div class="header"><strong>Contact</strong></div>
+                        <img src="./score.png" alt="me"/ width="75%" height="auto"/>
+                        </br>
+                        </br>
+                        <p class="context-inside">Email Address: larrisim@gmail.com&nbsp;&nbsp;&nbsp;</font><a href="mailto:larrisim@gmail.com"><img alt="" src="./gmail.jpeg"/></a></p>
+                    <p class="context-inside">Linkedin: Larrisim&nbsp;&nbsp;&nbsp;</font><a target="_blank" href="http://tw.linkedin.com/pub/larrisim-chang/80/421/364"><img alt="" src="./linkedin.png" /></a></p>
+            </div>
+        </div> <!-- tab-pane -->
+        <div class="footer">
+            <p>&copy; Larry Chang 2013</p>
+        </div>
+    </div> <!-- tab-content -->
 
-        </div> <!-- /container -->
+</div> <!-- /container -->
 
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./dist/js/bootstrap.min.js"></script>
-        <script src="./docs-assets/js/holder.js"></script>
-        <script src="./docs-assets/js/application.js"></script>
-        <script src="http://platform.twitter.com/widgets.js"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./dist/js/bootstrap.min.js"></script>
+<script src="./docs-assets/js/holder.js"></script>
+<script src="./docs-assets/js/application.js"></script>
+<script src="http://platform.twitter.com/widgets.js"></script>
     </body>
 </html>
