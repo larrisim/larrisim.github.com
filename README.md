@@ -1,4 +1,4 @@
-larrisim.github.com
+larrisim.github.io
 ===================
 
 personal website
