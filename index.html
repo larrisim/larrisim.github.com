@@ -16,6 +16,8 @@
         <!-- Custom styles for this template -->
         <link href="jumbotron-narrow.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -34,6 +36,15 @@
                 width: 560;
                 height: 315;
             }
+
+            .wrapper{
+                display: inline-flex;
+            }
+
+            .wrapper .icon{
+                margin: 0 20px;
+                color:black;
+            }
         </style>
     </head>
 
@@ -42,208 +53,142 @@
         <div class="container"> 
             <div class="header">
                 <ul class="nav nav-pills pull-right navbar">
-                    <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li class="tab-content"><a data-toggle="tab" href="#about">About</a></li>
+                    <li class="tab-content"><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+                    <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a> -->
+                    <!-- <ul class="dropdown-menu">
                         <li><a id="nav_portfolio" data-toggle="tab" href="#portfolio">Works</a></li>
                         <li><a data-toggle="tab" href="#work_in_progress">Work in Progress</a></li>
                     </ul>
                     </li>
-                    <li><a data-toggle="tab" href="#contact">Contact</a></li>
+                    <li><a data-toggle="tab" href="#contact">Contact</a></li> -->
                 </ul>
                 <h3 class="text-muted">Larry Chang</h3>
             </div>
             <div class="tab-content">
-                <div class="tab-pane fade in active" id="about">
+
+                <div class="tab-pane fade in active" id="home">
+                    <div class="jumbotron">
+                    <div class="header" style="font-size: 80px; margin-bottom: -7%; margin-top: -5%;"><strong>Larry Chang</strong></div>
+                    <p>Software Engineer and Audio Technologist</p>
+
+                    <img src="./me.jpg" alt="me"/ width="75%" height="auto" style="margin-top: 5%;"/>
+                        <br><br>
+                        <div class="wrapper">
+                            <a target="_blank" href="https://github.com/larrisim" class="icon github">
+                                <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                             </a>
+
+
+                            <a target="_blank" href="https://www.linkedin.com/in/larry-yucheng-chang-36442180/" class="icon linkedin">
+                                <div class="tooltip">Linkedin</div>
+                            <span><i class="fab fa-linkedin"></i></span>
+                            </a>
+
+                            <a target="_blank" href="https://www.instagram.com/larrisim/" class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                            </a>
+
+                            <p class="context-inside"></font><a href="mailto:larrisim@gmail.com"><img alt="" src="./Email.png" width="60" /></a></p>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane fade in" id="about">
                     <div class="jumbotron">
                         <div class="header"><strong>About</strong></div>
-                        <img src="./me.jpg" alt="me"/ width="75%" height="auto"/>
-                        </br>
-                        </br>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Born and raised in Taipei, Larry Chang held a deep fascination for arts of all forms. From a young age, he has been classically trained in piano, dizi (Chinese flute) and music theory and is at home with classical, jazz, pop, rock, theater, as well as film music. In order to combine art with business, Larry chose to study in National Taiwan University (NTU) and received his B.B.A. degree in 2011. In college, Larry actively collaborated with various student film and theater projects and gained his practical experiences as a composer, arranger and performer.
-                        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Larry began focusing on scoring for film and theater after graduation. He learned to manage work well in a team in every project and has composed for an array of films and theaters.
-                        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Larry also learned 2D and 3D animation in his free time. He managed to produce his own animated films and projects.
-                        </br></br>
+
+                        <p class="context-inside">
+                            Larry Chang is a versatile software developer and technical audio artist with a deep passion for creating immersive experiences through the intersection of technology, audio, and interactive media. He holds a Master of Entertainment Technology from Carnegie Mellon University and a Bachelor of Business Administration from National Taiwan University. With extensive experience in both software development and audio programming, Larry has worked on a wide range of innovative projects, from web development to virtual reality (VR) and augmented reality (AR) experiences.                        
+
+                        <br><br>
+                        Larry is proficient in a range of programming languages, including Python, C#, C, and JavaScript, and has expertise in web development, game engines, and audio tools. His technical skill set, combined with his creative approach to sound design, has enabled him to consistently push the boundaries of interactive and immersive media.
+
                         </p>
-                        <span><a class="btn btn-lg btn-primary" target="_blank" href="./cv.pdf" role="button">Curriculum Vitae</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span><a class="btn btn-lg btn-primary" onclick='$("#nav_portfolio").click();' role="button">Portfolio</a></span>
+                        <!-- <span><a class="btn btn-lg btn-primary" target="_blank" href="./cv.pdf" role="button">Curriculum Vitae</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><a class="btn btn-lg btn-primary" onclick='$("#nav_portfolio").click();' role="button">Portfolio</a></span> -->
                     </div>
                 </div> <!-- tab-pane -->
                 <div class="tab-pane fade in" id="portfolio">
                     <div class="jumbotron">
-                        <div class="header"><strong>Zone Pro Site</strong></div>
-                        <ul class="nav nav-tabs" id="work1_nav">
-                            <li class="active"><a href="#work1_1" data-toggle="tab"><small>Soundtrack</small></a></li>
-                            <li><a href="#work1_2" data-toggle="tab"><small>Video 1</small></a></li>
-                            <li><a href="#work1_3" data-toggle="tab"><small>Video 2</small></a></li>
-                            <li><a href="#work1_4" data-toggle="tab"><small>Video 3</small></a></li>
-                            <li><a href="#work1_5" data-toggle="tab"><small>Video 4</small></a></li>
-                        </ul>
-                        <div class="tab-content" align="center">
-                            <div class="tab-pane active" id="work1_1">
-                                <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990810%3Fsecret_token%3Ds-xZo2y"></iframe>
-                            </div>
-                            <div class="tab-pane" id="work1_2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQfeVF4Naw" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work1_3">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MDAqEsw7Gyw" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work1_4">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WXw7Q4YczpU" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work1_5">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KNT3axImhI4" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                        <div class="header"><strong>Equalizer Audio Plug-In</strong></div>
+                        <img align="center" alt="equalizer" src="./Equalizer.png" width="560"/>
+
+                        <br><br>
+                        <p class="context-inside">
+                        Equalizer is an audio plug-in designed to manipulate the frequency of a given audio file (.wav/.aiff). As a music composer and an audio technologist, I developed this plug-in to explore the process of creating audio tools and enhance my understanding of audio plug-in development. 
+                        </p>
+
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: JUCE framework, C#</i></p>
+                        <a class="context-inside" target="_blank" href="https://github.com/larrisim/SimpleEQ">Project Github Page</a>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Stock Exchange Website Development</strong></div>
+                        <img align="center" alt="stock" src="./stockExchange.jpg" width="560"/>
+
+                        <br><br>
+                        <p class="context-inside">
+                        A comprehensive web platform that provides clients with secure access to their personalized investment portfolios. The website allows users to seamlessly log in, view real-time stock prices, and manage their investments by executing buy and sell transactions. The platform was designed with a user-centric approach, incorporating intuitive navigation and robust security features to ensure a streamlined and secure trading experience for clients.
+                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: Flask, Python, JavaScript, CSS</i></p>
+                    </div>
+
+
+                    <div class="jumbotron">
+                        <div class="header"><strong><font size="4">Social Media Website Development</font></strong></div>
+                        <img align="center" alt="stock" src="./socialMedia.jpg" width="560"/>
+
+                        <br><br>
+                        <p class="context-inside">
+                        A streamlined web-based social media platform that offers users an intuitive and simplified interface for social interaction. Key features of the platform include user authentication for secure login, the ability to create and delete posts, leave comments on existing content, and search for posts using specific criteria. The platform emphasizes ease of use while maintaining essential social media functionalities, ensuring a user-friendly experience for engaging with content and fostering online discussions.
+                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: React, JavaScript, CSS</i></p>
+                    </div>
+
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>The Price of Freedom<br>(Audio Programming and Implementation)</strong></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0XeyCxRZkdI?si=-bw9jjRpIzIk10Of" frameborder="0" allowfullscreen></iframe>
+                        <br>
+                        <p class="context-inside">
+                        I developed sophisticated in-house interactive audio systems using custom scripts, designed to enhance the immersive and intuitive auditory experience within virtual reality environments. By seamlessly integrating dynamic audio elements, these systems respond to real-time user interactions, creating a more engaging and lifelike VR experience. This project involved leveraging advanced audio programming techniques to ensure that the sound design not only complemented the visual elements but also heightened the overall sense of presence, further deepening the user's immersion in the virtual world.
+                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: Unity, C#, Wwise</i></p>
+                    </div>
+
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Dragonspire<br>(Audio Programming and Implementation)</strong></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/96amd0QtlMc?si=YeeVw4OkRu5xUaIn" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <p class="context-inside">
+                            I implemented audio content into UE5 by utilizing Unreal blueprints and custom scripting to ensure seamless integration and functionality. Leveraging Unreal's advanced MetaSounds system, along with in-house audio tools, I optimized audio performance across multiple projects, achieving a high level of precision and efficiency. This process involved fine-tuning audio assets to enhance the overall gaming experience, ensuring that sound design was immersive, responsive, and aligned with the technical demands of each project.                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: UE5, C#, FMOD, MetaSounds</i></p>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Beyond Van Gogh: A Life in Letters VR Experience</strong></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6zKl-DoSuzo?si=p7V2RjNbORa5_689" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="context-inside">
+                            I developed and implemented an immersive audio system for Beyond Van Gogh: A Life in Letters, enhancing the exhibition's emotional and sensory impact. By carefully designing and integrating spatial audio elements, I ensured that the soundscapes complemented the visual narrative, creating a fully immersive experience for visitors. The audio system was crafted to respond dynamically to the exhibition’s flow, enveloping the audience in a multi-layered auditory journey that deepened their connection to Van Gogh’s life and art.
+                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: Unity, C#, Wwise</i></p>
+
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="header"><strong>Mirage: A 29Rooms' AR Immersive Experience</strong></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/abNIruV1N-U?si=hz1NJ8S1zSbGFpuZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <p class="context-inside">
+                            I developed an interactive augmented reality (AR) audio experience for Refinery29’s 29Rooms project, utilizing the SparkAR platform to blend innovative audio design with visual interactivity. The experience allowed users to engage with dynamic soundscapes that responded to their movements and interactions within the AR environment. By crafting immersive audio elements, I enhanced the overall sensory impact of the project, creating a unique and engaging user experience that seamlessly integrated sound and visual storytelling.                        </p>
+                        </p>
+                        <p class="context-inside" style="font-size: medium;"><i>Technologies: SparkAR</i></p>
                         </div>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Zone Pro Site is a movie talking about the traditional Taiwanese cook and cuisine, and their way of living that affects the young generation. Zone Pro Site won a 300 million box office in Taiwan & its music was nominated to be the Best Original Film Score in Taipei Golden Horse Award (Taiwan’s equivalent to the Oscars)
-                        Larry was responsible as additional music composer and performer of traditional Chinese music instrument, Dizi and Bawu, in this film. 
-                        </p>
-                    </div>
 
-                    <div class="jumbotron">
-                        <div class="header"><strong>The Great Escape from Café City</strong></div>
-                        <ul class="nav nav-tabs" id="work2_nav">
-                            <li class="active"><a href="#work2_1" data-toggle="tab"><small>Soundtrack</small></a></li>
-                            <li><a href="#work2_2" data-toggle="tab"><small>Video 1</small></a></li>
-                            <li><a href="#work2_3" data-toggle="tab"><small>Video 2</small></a></li>
-                            <li><a href="#work2_4" data-toggle="tab"><small>Video 3</small></a></li>
-                        </ul>
-                        <div class="tab-content" align="center">
-                            <div class="tab-pane active" id="work2_1">
-                                <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990867%3Fsecret_token%3Ds-qtXez"></iframe>
-                            </div>
-                            <div class="tab-pane" id="work2_2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6dnaa2N3qS4" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work2_3">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jsYe16OKfuw" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work2_4">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jzk8tgEb1tA" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        The Great Escape from Café City is a short film. The story cynically talks about a guy who discovered all the little happiness happened in his life is nothing but faking & manipulated.
-                        Larry was responsible as one of the composer in this film. He created an awkward atmosphere to make everything sounds like madness.
-                        </p>
-                    </div>
-
-
-                    <div class="jumbotron">
-                        <div class="header"><strong><font size="4">The Adventure of Shimajiro – Rescuing the Stolen Rainbow</font></strong></div>
-                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990907%3Fsecret_token%3Ds-1lcuO"></iframe>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        The Adventure of Shimajiro is a children’s theater production. In the story, the main characters go through an adventure trying to rescue the rainbow which has been stolen by bad guys. Larry composed music for several magical themes and some interesting songs.
-                        </p>
-                    </div>
-
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>Show On APP</strong></div>
-                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990929%3Fsecret_token%3Ds-XOLKw"></iframe>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Show On APP is a theater production that designed as the monologue of an ordinary pink-collar worker discussing critically about what life is all about.
-                        Larry designed various kinds of listening experience correspond to the colorful thought in the mind of the leading actress.
-                        </p>
-                    </div>
-
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>K24</strong></div>
-                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14991039%3Fsecret_token%3Ds-ucNZZ"></iframe>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        K24 is a TV-series style theater production. In the story, a stupid agent runs into huge murders with a suspicious but funny theme. Larry composed some songs for the characters.
-                        </p>
-                    </div>
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>Goodbye Lady</strong></div>
-                        <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14991027%3Fsecret_token%3Ds-eD9xX"></iframe>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Goodbye Lady is a theater production talking about a love story in a family. It’s about a single mother shares house with an actor who changes her life afterward.
-                        Larry was responsible as additional music composer.
-                        </p>
-                    </div>
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>Faithball</strong></div>
-                        <ul class="nav nav-tabs" id="work7_nav">
-                            <li class="active"><a href="#work7_1" data-toggle="tab"><small>Soundtrack</small></a></li>
-                            <li><a href="#work7_2" data-toggle="tab"><small>Video</small></a></li>
-                        </ul>
-                        <div class="tab-content" align="center">
-                            <div class="tab-pane active" id="work7_1">
-                                <iframe width="560" height="166" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/121043510%3Fsecret_token%3Ds-xvulf"></iframe>
-                            </div>
-                            <div class="tab-pane" id="work7_2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3FqQTsFsVlU" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Faithball is a movie about a Taiwanese baseball team and how they determine themselves to win the game with beliefs. Larry combined a full symphony orchestra with traditional Chinese instruments for its trailer music.
-                        </p>
-                    </div>
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>The Sight of One’s Back</strong></div>
-                        <ul class="nav nav-tabs" id="work8_nav">
-                            <li class="active"><a href="#work8_1" data-toggle="tab"><small>Soundtrack</small></a></li>
-                            <li><a href="#work8_2" data-toggle="tab"><small>Video 1</small></a></li>
-                            <li><a href="#work8_3" data-toggle="tab"><small>Video 2</small></a></li>
-                            <li><a href="#work8_4" data-toggle="tab"><small>Video 3</small></a></li>
-                        </ul>
-                        <div class="tab-content" align="center">
-                            <div class="tab-pane active" id="work8_1">
-                                <iframe width="560" height="315" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14990996%3Fsecret_token%3Ds-JLmIt"></iframe>
-                            </div>
-                            <div class="tab-pane" id="work8_2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-0k8WqS0QUY" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work8_3">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ei9YgCWiydU" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work8_4">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2uzW9cC4LfY" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        The Sight of One’s Back is a student’s short film talking about the daily life of Taiwanese family in old days. Larry was responsible as the music composer. He used traditional Taiwanese music instrument to recall the nostalgic feeling of those old days in Taiwan. 
-                        The film was chosen as the opening movie in the 19th Radio, TV and Film Festival of Shih Hsin University- the greatest honor in the festival.
-                        </p>
-                    </div>
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>Tainan Love God V.S. Cupid</strong></div>
-                        <ul class="nav nav-tabs" id="work9_nav">
-                            <li class="active"><a href="#work9_1" data-toggle="tab"><small>Trailer</small></a></li>
-                            <li><a href="#work9_2" data-toggle="tab"><small>Film</small></a></li>
-                        </ul>
-                        <div class="tab-content" align="center">
-                            <div class="tab-pane active" id="work9_1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qyzBYos6u8g" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="tab-pane" id="work9_2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/o-y9WKZOyFE" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Tainan Love God V.S. Cupid is a comedy about the battle between western and eastern love God. Larry was responsible as the music composer for both the trailer and the main film.
-                        </p>
-                    </div>
-
-                    <div class="jumbotron">
-                        <div class="header"><strong>Three Little Pigs</strong></div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SinqOXE-6DU" frameborder="0" allowfullscreen></iframe>
-                        <p class="context-inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Three Little Pigs is a bank commercial designed by Larry. He not only designed the script but drew the animation and composed the music.
-                        </p>
-                    </div>
 
                 </div> <!-- tab-pane -->
                 <div class="tab-pane fade in" id="work_in_progress">
@@ -340,18 +285,10 @@
 
                     </div>
                 </div> <!-- tab-pane -->
-                <div class="tab-pane fade in" id="contact">
-                    <div class="jumbotron">
-                        <div class="header"><strong>Contact</strong></div>
-                        <img src="./score.png" alt="me"/ width="75%" height="auto"/>
-                        </br>
-                        </br>
-                        <p class="context-inside">Email Address: larrisim@gmail.com&nbsp;&nbsp;&nbsp;</font><a href="mailto:larrisim@gmail.com"><img alt="" src="./gmail.jpeg"/></a></p>
-                    <p class="context-inside">Linkedin: Larrisim&nbsp;&nbsp;&nbsp;</font><a target="_blank" href="http://tw.linkedin.com/pub/larrisim-chang/80/421/364"><img alt="" src="./linkedin.png" /></a></p>
-            </div>
+  
         </div> <!-- tab-pane -->
         <div class="footer">
-            <p>Designed by Zarcen Chen. &copy; Larry Chang</p>
+            <p align="center">&copy; 2024 Larry Chang</p>
         </div>
     </div> <!-- tab-content -->
 
